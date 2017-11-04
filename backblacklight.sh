@@ -1,5 +1,4 @@
 #!/bin/bash
-
 # backlight brightness controls. use freely
 # and adjust sysfs directory if not on intel
 # $author  praveen reddy gorla
@@ -20,6 +19,8 @@ echo "$script current : Shows present brightness level with a max brightness lev
 echo "$script increase     : increases brightness"
 echo "$script decrease   : decreases brightness"
 echo "$script set #  : sets brightness to an Integer "
+echo "$script nightmmode : Nightmode"
+echo "$script daymode : Daymode"
 echo "########################################################################"
 echo
 
@@ -58,6 +59,20 @@ case "$1" in
     set_brightness $level
     echo brightness levelset to $level 
     ;;
+ nightmode)
+   let "level=65"
+   set_brightness $level
+   NM=1
+   DM=0
+   echo Working on Night Mode
+   ;;
+ daymode)
+   let "level=712"
+   set_brightness $level
+   NM=0
+   DM=1
+  echo Working on Day Light Mode
+ ;;
   set)
     if [[ ! $2 =~ ^[[:digit:]]+$ ]]; then
      usage " $USER please input an integer"
@@ -67,5 +82,5 @@ case "$1" in
     echo brightness levelset to $level
     ;;
   *)
-    usage "invalid argument, Make a valid one among the following"
+  usage "invalid argument, Make a valid one among the following"
 esac
