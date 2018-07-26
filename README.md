@@ -13,6 +13,7 @@ Intallation : run the following commands in your linux terminal
 Usage After Installation:
 
 ==============================================================================
+
 run                : backlight [commands] [options] 
 
      [command]
