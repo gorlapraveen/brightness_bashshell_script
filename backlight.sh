@@ -1,11 +1,10 @@
-<<<<<<< HEAD
+
 #!/bin/bash
 
 # backlight brightness controls. use freely
 # and adjust sysfs directory if not on intel
 # $author  praveen reddy gorla
 
-=======
 
 #!/bin/bash
 # backlight brightness controls. use freely
@@ -21,7 +20,7 @@
 #GNU General Public License for more details.
 #You should have received a copy of the GNU General Public License  along with this program.  If not, see <https://www.gnu.org/licenses/>.
     
->>>>>>> 5627e17aa2a0d4e15601fa8e5ec04d42882c9535
+
 sysfs="/sys/class/backlight/intel_backlight"
 max=`cat ${sysfs}/max_brightness`
 level=`cat ${sysfs}/brightness`
@@ -33,18 +32,24 @@ script=${0##*/}
 echo
 echo "Invalid usage of ${script}!"
 echo "  $1"
-echo "####### Hello $USER, use the folowing to control the brightness level ##########"
-echo "$script current : Shows present brightness level with a max brightness level of  $max "
-echo "$script increase     : increases brightness"
+echo " "
+echo "------- Hello $USER, use the folowing to control the brightness level --------"
+echo "=============================================================================="
+echo "run                : backlight [commands] [options] "
+echo " "
+echo "[command]"
+echo "$script current    : Shows present brightness level with a max brightness level of  $max "
+echo "$script increase   : increases brightness"
 echo "$script decrease   : decreases brightness"
-echo "$script set #  : sets brightness to an Integer "
-<<<<<<< HEAD
-=======
+echo "$script set        : sets brightness to an Integer "
 echo "$script nightmmode : Nightmode"
-echo "$script daymode : Daymode"
->>>>>>> 5627e17aa2a0d4e15601fa8e5ec04d42882c9535
-echo "########################################################################"
-echo
+echo "$script daymode    : Daymode"
+echo " "
+echo "[options]          : input integers form 1 to $max"
+echo "============================================================================="
+echo "Example usage      :'backlight increase' to increase brightness by one level"
+echo "Example usage      :'backlight set 300' to set brightness level to 300 in range of 1 to $max"
+echo "-------------------------------------Try Again-------------------------------"
 
 
 exit 1
@@ -69,6 +74,7 @@ echo $level > $sysfs/brightness
 case "$1" in
    current)
     let "level=level"
+ 
     echo current brightness level as of on $(date +"%T") is $level
 ;; 
   increase)
@@ -81,8 +87,7 @@ case "$1" in
     set_brightness $level
     echo brightness levelset to $level 
     ;;
-<<<<<<< HEAD
-=======
+
  nightmode)
    let "level=65"
    set_brightness $level
@@ -97,7 +102,7 @@ case "$1" in
    DM=1
   echo Working on Day Light Mode
  ;;
->>>>>>> 5627e17aa2a0d4e15601fa8e5ec04d42882c9535
+
   set)
     if [[ ! $2 =~ ^[[:digit:]]+$ ]]; then
      usage " $USER please input an integer"
@@ -107,9 +112,8 @@ case "$1" in
     echo brightness levelset to $level
     ;;
   *)
-<<<<<<< HEAD
+
     usage "invalid argument, Make a valid one among the following"
-=======
+
   usage "invalid argument, Make a valid one among the following"
->>>>>>> 5627e17aa2a0d4e15601fa8e5ec04d42882c9535
 esac
