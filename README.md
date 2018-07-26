@@ -38,6 +38,7 @@ Example usage
            :'backlight set 300' to set brightness level to 300 in range of 1 to maximum brightness"
 
 Developed and Contributed by: 
+
             Gorla Praveen
 
 
