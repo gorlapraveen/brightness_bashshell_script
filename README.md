@@ -3,11 +3,13 @@ A simple bash script for linux to increase brightness, decrease brightness, set 
 For example as a root user run : "backblacklight nightmode" in your terminal for nightmode
 
 
-Intallation : run the following commands in your linux terminal
-  'git clone https://gitlab.com/gorlapraveen/brightness_bashshell_script.git' for cloning this repository in your system.
+Intallation : run the following commands in your linux terminal for cloning and installation
+===============================================================================
 
-  'cd brightness_bashshell_script'
-  './setup.sh'
+         git clone https://gitlab.com/gorlapraveen/brightness_bashshell_script.git
+
+         cd brightness_bashshell_script
+         ./setup.sh
 
 
 Usage After Installation:
