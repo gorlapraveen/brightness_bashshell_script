@@ -24,9 +24,9 @@ run                : backlight [commands] [options]
             nightmmode : Nightmode"
             daymode    : Daymode"
 
-     [options]         : input integers form 1 to $max"
+     [options]         : input integers form 1 to maximum brightness"
 
 Example usage      :'backlight increase' to increase brightness by one level"
-Example usage      :'backlight set 300' to set brightness level to 300 in range of 1 to max brightness"
+Example usage      :'backlight set 300' to set brightness level to 300 in range of 1 to maximum brightness"
 
 
