@@ -30,9 +30,14 @@ run                : backlight [commands] [options]
      [options]         : input integers form 1 to maximum brightness"
 
 Example usage
+
            :'backlight increase' to increase brightness by one level"
 
 Example usage
+
            :'backlight set 300' to set brightness level to 300 in range of 1 to maximum brightness"
+
+Developed and Contributed by: 
+            Gorla Praveen
 
 
