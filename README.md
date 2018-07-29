@@ -12,7 +12,8 @@ Intallation : run the following commands in your linux terminal for cloning and 
          ./setup.sh
 
 
-Usage After Installation:
+
+Usage: After Installation:
 
 ==============================================================================
 
@@ -36,6 +37,12 @@ Example usage
 Example usage
 
            :'backlight set 300' to set brightness level to 300 in range of 1 to maximum brightness"
+
+
+Uninstall:
+
+Run './delete.sh' in the same directory, so that the package for controlling the brightness by commandline interface is disabled and concerned packge(this package) is deleted/purged/uninstalled.
+          :./delete.sh
 
 Developed and Contributed by: 
 
