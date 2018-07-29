@@ -34,14 +34,14 @@ Example usage :  To increase brightness by one level. Run the following in Comma
 
              backlight increase
 
-Example usage : To set brightness level to 300 in range of 1 to maximum brightness(for Intel processors the max brigntness may be 937 in integer number).
+Example usage : To set brightness level to 300 in range of 1 to maximum brightness(for Intel processors the max brigntness may be 937 in integer number). Run the following in Command Line Interface.
 
              backlight set 300 
 
 
 #Uninstall:
 
-Run './delete.sh' in the Command Line interface, from the same directory, so that the package for controlling the brightness by commandline interface is disabled and concerned packge(this package) is deleted/purged/uninstalled.
+Run 'delete.sh' in the Command Line interface, from the same directory, so that the package for controlling the brightness by Command Line Interface is disabled and concerned packge(this package) is deleted/purged/uninstalled. 
          
          ./delete.sh
 
