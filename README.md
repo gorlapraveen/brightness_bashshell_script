@@ -13,7 +13,7 @@ Intallation : run the following commands in your linux terminal for cloning and 
 
 
 
-Usage: After Installation:
+#Usage: After Installation:
 
 ==============================================================================
 
@@ -30,20 +30,20 @@ run                : backlight [commands] [options]
 
      [options]         : input integers form 1 to maximum brightness"
 
-Example usage
+Example usage :  To increase brightness by one level. Run the following in Command Line Interface.
 
-           :'backlight increase' to increase brightness by one level"
+             backlight increase
 
-Example usage
+Example usage : To set brightness level to 300 in range of 1 to maximum brightness(for Intel processors the max brigntness may be 937 in integer number).
 
-           :'backlight set 300' to set brightness level to 300 in range of 1 to maximum brightness"
+             backlight set 300 
 
 
-Uninstall:
+#Uninstall:
 
-Run './delete.sh' in the same directory, so that the package for controlling the brightness by commandline interface is disabled and concerned packge(this package) is deleted/purged/uninstalled.
+Run './delete.sh' in the Command Line interface, from the same directory, so that the package for controlling the brightness by commandline interface is disabled and concerned packge(this package) is deleted/purged/uninstalled.
          
-         :./delete.sh
+         ./delete.sh
 
 Developed and Contributed by: 
 
