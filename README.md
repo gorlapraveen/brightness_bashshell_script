@@ -42,7 +42,8 @@ Example usage
 Uninstall:
 
 Run './delete.sh' in the same directory, so that the package for controlling the brightness by commandline interface is disabled and concerned packge(this package) is deleted/purged/uninstalled.
-          :./delete.sh
+         
+         :./delete.sh
 
 Developed and Contributed by: 
 
