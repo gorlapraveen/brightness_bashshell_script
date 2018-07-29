@@ -22,13 +22,13 @@ run                : backlight [commands] [options]
      [command]
 
             current    : Shows present brightness level within the max brighness level
-            increase   : increases brightness"
-            decrease   : decreases brightness" 
-            set        : sets brightness to an Integer "
-            nightmmode : Nightmode"
-            daymode    : Daymode"
+            increase   : increases brightness
+            decrease   : decreases brightness 
+            set        : sets brightness to an Integer
+            nightmmode : Nightmode
+            daymode    : Daymode
 
-     [options]         : input integers form 1 to maximum brightness"
+     [options]         : input integers form 1 to maximum brightness
 
 Example usage :  To increase brightness by one level. Run the following in Command Line Interface.
 
