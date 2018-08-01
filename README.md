@@ -45,8 +45,6 @@ Run 'delete.sh' in the Command Line interface, from the same directory, so that 
          
          ./delete.sh
 
-Developed and Contributed by: 
-
-            @gorlapraveen:Gorla Praveen
+Contributor:Gorla Praveen
 
 
