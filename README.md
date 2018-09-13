@@ -3,7 +3,7 @@ A simple bash script for linux to increase brightness, decrease brightness, set 
 For example as a root user run : "backblacklight nightmode" in your terminal for nightmode
 
 
-Intallation : run the following commands in your linux terminal for cloning and installation
+## Intallation : run the following commands in your linux terminal for cloning and installation
 ===============================================================================
 
          git clone https://gitlab.com/gorlapraveen/brightness_bashshell_script.git
@@ -13,11 +13,11 @@ Intallation : run the following commands in your linux terminal for cloning and 
 
 
 
-#Usage: After Installation:
+## Usage: After Installation:
 
 ==============================================================================
 
-run                : backlight [commands] [options] 
+### run                : backlight [commands] [options] 
 
      [command]
 
@@ -30,22 +30,23 @@ run                : backlight [commands] [options]
 
      [options]         : input integers form 1 to maximum brightness
 
-Example usage :  To increase brightness by one level. Run the following in Command Line Interface.
+ **Example usage** :  To increase brightness by one level. Run the following in Command Line Interface.
 
              backlight increase
 
-Example usage : To set brightness level to 300 in range of 1 to maximum brightness(for Intel processors the max brigntness may be 937 in integer number). Run the following in Command Line Interface.
+**Example usage** : To set brightness level to 300 in range of 1 to maximum brightness(for Intel processors the max brigntness may be 937 in integer number). Run the following in Command Line Interface.
 
              backlight set 300 
+**Note** : Debian(.deb) exclusive package is available at [Gitlab rep](https://gitlab.com/gorlapraveen/blacklight-deb-packages)
 
 
-#Uninstall:
+## Uninstall:
 
 Run 'delete.sh' in the Command Line interface, from the same directory, so that the package for controlling the brightness by Command Line Interface is disabled and concerned packge(this package) is deleted/purged/uninstalled. 
          
          ./delete.sh
 
-Developed and Contributed by: 
+_*Developed and Contributed by:*_ 
 
             @gorlapraveen:Gorla Praveen
 
