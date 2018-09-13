@@ -46,12 +46,11 @@ Run 'delete.sh' in the Command Line interface, from the same directory, so that 
          
          ./delete.sh
 
-<<<<<<< HEAD
+
 _*Developed and Contributed by:*_ 
 
             @gorlapraveen:Gorla Praveen
-=======
-Contributor:Gorla Praveen
->>>>>>> 22b15e727ff10e25e601301f1a15a6c10566bd6b
+
+
 
 
