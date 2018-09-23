@@ -13,7 +13,7 @@ For example as a root user run : "backblacklight nightmode" in your terminal for
 
 
 
-## Usage: After Installation:
+**Usage: After Installation:**
 
 ==============================================================================
 
