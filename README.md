@@ -17,7 +17,7 @@ For example as a root user run : "backblacklight nightmode" in your terminal for
 
 ==============================================================================
 
-### run                : backlight [commands] [options] 
+#### run                : backlight [commands] [options] 
 
      [command]
 
@@ -47,7 +47,7 @@ Run 'delete.sh' in the Command Line interface, from the same directory, so that 
          ./delete.sh
 
 
-_*Developed and Contributed by:*_ @gorlapraveen
+**Developed and Contributed by:** @gorlapraveen
 
 
 
