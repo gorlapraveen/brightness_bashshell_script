@@ -1,4 +1,3 @@
-
 #!/bin/bash
 
 # backlight brightness controls. use freely
@@ -22,8 +21,8 @@
     
 
 sysfs="/sys/class/backlight/intel_backlight"
-max=`cat ${sysfs}/max_brightness`
-level=`cat ${sysfs}/brightness`
+max="$(cat ${sysfs}/max_brightness)"
+level="$(cat ${sysfs}/brightness)"
 
 
 usage()
@@ -58,45 +57,45 @@ exit 1
 set_brightness()
 {
 
-level=$1
+level="$1"
 
-if [ $level -lt 1 ] ; then
+if [ "$level" -lt 1 ] ; then
  level=1
 echo minimum  brightness level is $level
-elif [ $level -gt $max ] ; then
- level=$max
-echo maximum brightness level accepted is $level
+elif [ "$level" -gt "$max" ] ; then
+ level="$max"
+echo "maximum brightness level accepted is $level"
 fi
  
-echo $level > $sysfs/brightness 
+echo "$level" > $sysfs/brightness 
 }
 
 case "$1" in
    current)
-    let "level=level"
+    (( level=level ))
  
-    echo current brightness level as of on $(date +"%T") is $level
+    echo "current brightness level as of on $(date +\"%T\") is $level"
 ;; 
   increase)
-    let "level+=1"
+    (( level++ ))
     set_brightness $level 
     echo brightness levelset to $level
     ;;
   decrease)
-    let "level-=1"
+    (( level-- ))
     set_brightness $level
     echo brightness levelset to $level 
     ;;
 
  nightmode)
-   let "level=65"
+   (( level=65 ))
    set_brightness $level
    NM=1
    DM=0
    echo Working on Night Mode
    ;;
  daymode)
-   let "level=712"
+   (( level=712 ))
    set_brightness $level
    NM=0
    DM=1
@@ -108,7 +107,7 @@ case "$1" in
      usage " $USER please input an integer"
     fi
 
-    set_brightness $2
+    set_brightness "$2"
     echo brightness levelset to $level
     ;;
   *)
