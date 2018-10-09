@@ -55,7 +55,7 @@ further defined and clarified by project maintainers.
 ## Enforcement
 
 Instances of abusive, harassing, or otherwise unacceptable behavior may be
-reported by contacting the project team at [our project issues](https://github.com/gorlapraveen/firefox_b2b_comm_radio_addon/issues)(by creating New Issue). All
+reported by contacting the project team at [our project issues](#)(by creating New Issue). All
 complaints will be reviewed and investigated and will result in a response that
 is deemed necessary and appropriate to the circumstances.
 
